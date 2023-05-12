@@ -26,11 +26,15 @@ func main() {
 	type FortyTwo struct {
 	}
 	ft := FortyTwo{}
-	var arr = [...]int{42} // arrays cannot be resized
-	/* arrays are "value types" which means that copying them:
+	var arr = [...]int{42}
+	/*
+	- arrays cannot be resized
+	- you cannot use a variable to set the length of the array
+	- arrays are "value types" which means that copying them:
 		arr2 := arr
 	or passing an array to a function, or returning it from a function,
-	creates a copy of the original array. */
+	creates a copy of the original array.
+	*/
 	ftMap := make(map[string]int)
 	ftMap["42"] = 42
 	// or ftMap := map[string]int{"42":42}
