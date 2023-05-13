@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 var i16 int16 = 42
+
 /*
 Defined at the package level, a variable is visible across all the files that
 compose the package.
@@ -28,12 +29,12 @@ func main() {
 	ft := FortyTwo{}
 	var arr = [...]int{42}
 	/*
-	- arrays cannot be resized
-	- you cannot use a variable to set the length of the array
-	- arrays are "value types" which means that copying them:
-		arr2 := arr
-	or passing an array to a function, or returning it from a function,
-	creates a copy of the original array.
+		- arrays cannot be resized
+		- you cannot use a variable to set the length of the array
+		- arrays are "value types" which means that copying them:
+			arr2 := arr
+		or passing an array to a function, or returning it from a function,
+		creates a copy of the original array.
 	*/
 	ftMap := make(map[string]int)
 	ftMap["42"] = 42
